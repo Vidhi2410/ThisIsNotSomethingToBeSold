@@ -1,5 +1,4 @@
-# Taking user input for the needed calculation
-
+import math
 oper = int(input('''Enter 1 for addition
 Enter 2 for subtraction
 Enter 3 for multiplication
@@ -31,7 +30,8 @@ Division = num1/num2
 Square = num1*num1
 AreaOfCircle_Radius_num1 = pi*num1*num1
 Circumference = 2*pi*num1
-Root = Square/num1
+Root = math.sqrt(num1)
+
 
 # Statements that will calculate!
 
