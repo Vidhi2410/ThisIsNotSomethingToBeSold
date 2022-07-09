@@ -19,7 +19,7 @@ num2 = int(input("Enter 2nd number\n"))
 
 # Constant Values
 
-pi = 3.14159265359
+pi = math.pi
 
 # Formulae for calculation
 
