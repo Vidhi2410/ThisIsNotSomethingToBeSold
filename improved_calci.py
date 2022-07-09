@@ -1,3 +1,5 @@
+# Taking user input for the needed calculation
+
 oper = int(input('''Enter 1 for addition
 Enter 2 for subtraction
 Enter 3 for multiplication
@@ -11,11 +13,16 @@ print('''Square will be taken of 1st number!
 Radius will be taken as 1st number!
 SquareRoot of 1st number will be taken!
 ''')
+# Numbers that are going to be used in the calculation
 
 num1 = int(input("Enter 1st number\n"))
 num2 = int(input("Enter 2nd number\n"))
 
+# Constant Values
+
 pi = 3.14159265359
+
+# Formulae for calculation
 
 Add1 = num1+num2
 Diff = num1-num2
@@ -25,6 +32,8 @@ Square = num1*num1
 AreaOfCircle_Radius_num1 = pi*num1*num1
 Circumference = 2*pi*num1
 Root = Square/num1
+
+# Statements that will calculate!
 
 if oper == 1:
     print(Add1)
@@ -42,5 +51,5 @@ elif oper == 7:
     print(Circumference)
 elif oper == 8:
     print(Root)
-else:
-    print("I don't know this operator!")
+else: #This else statement will ensure the user doesn't enter wrong operator!
+    print("I don't know this operator!") 
