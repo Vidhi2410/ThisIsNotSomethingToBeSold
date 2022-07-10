@@ -3,7 +3,7 @@ Author: Vidhi!
 It just took 3hours to build this!
 */
 import java.util.*;
-public class ImprovisedCalci
+public class CalciUsingSwitchCase
 {
     public static void ImprovisedCalci(String[] args){
     
