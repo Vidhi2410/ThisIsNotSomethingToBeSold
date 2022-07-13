@@ -1,6 +1,7 @@
 import math
 
-print('''Square will be taken of 1st number!
+print('''
+Square will be taken of 1st number!
 Radius will be taken as 1st number!
 SquareRoot of 1st number will be taken!
 ''')
@@ -8,7 +9,8 @@ SquareRoot of 1st number will be taken!
 
 num1 = int(input("Enter 1st number\n"))
 
-oper = int(input('''Enter 1 for addition
+oper = int(input('''
+Enter 1 for addition
 Enter 2 for subtraction
 Enter 3 for multiplication
 Enter 4 for division
@@ -18,6 +20,8 @@ Enter 7 for Circumference/Perimeter of circle
 Enter 8 for SquareRoot
 Enter 9 for AreaOfTriangle\n'''))
 
+if oper == 5:
+    
 num2 = int(input("Enter 2nd number\n"))
 
 # Constant Values
