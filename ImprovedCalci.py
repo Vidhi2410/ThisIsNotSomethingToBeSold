@@ -7,57 +7,58 @@ SquareRoot of 1st number will be taken!
 ''')
 # Numbers that are going to be used in the calculation
 
-num1 = int(input("Enter 1st number\n"))
+n1 = int(input("Enter 1st number\n"))
 
-oper = int(input('''
-Enter 1 for addition
-Enter 2 for subtraction
-Enter 3 for multiplication
-Enter 4 for division
-Enter 5 for squaring
-Enter 6 for Area of circle
-Enter 7 for Circumference/Perimeter of circle
-Enter 8 for SquareRoot
-Enter 9 for AreaOfTriangle\n'''))
+oper = input('''
+Enter + for addition
+Enter - for subtraction
+Enter * for multiplication
+Enter / for division
+Enter ** for squaring
+Enter **/ for SquareRoot
+Enter 'AOT' for AreaOfTriangle
+Enter 'AOC' for Area of circle
+Enter 'CIRCOC' for Circumference/Perimeter of circle\n
+''')
     
-num2 = int(input("Enter 2nd number\n"))
+n2 = int(input("Enter 2nd number\n"))
 
 # Constant Values
 
 pi = math.pi
 
 # Formulae for calculation
+# You have to add cube, cube root!
 
-Add1 = num1+num2
-Diff = num1-num2
-Product = num1*num2
-Division = num1/num2
-Square = num1*num1
-AreaOfTriangle = 0.5*num1*num2
-AreaOfCircle_Radius_num1 = pi*num1*num1
-Circumference = 2*pi*num1
-Root = math.sqrt(num1)
+Add1 = n1+n2
+Diff = n1-n2
+Product = n1*n2
+Division = n1/n2
+Square = n1*n1
+SqRoot = math.sqrt(n1)
+AreaOfTriangle = 0.5*n1*n2
+AreaOfCircle_Radius_num1 = pi*n1*n1
+Circumference = 2*pi*n1
 
 # Statements that will calculate!
 
-if oper == 1:
+if oper == '+':
     print(Add1)
-elif oper == 2:
+elif oper == '-':
     print(Diff)
-elif oper == 3:
+elif oper == '*':
     print(Product)
-elif oper == 4:
+elif oper == '/':
     print(Division)
-elif oper == 5:
+elif oper == '**':
     print(Square)
-elif oper == 6:
-    print(AreaOfCircle_Radius_num1)
-elif oper == 7:
-    print(Circumference)
-elif oper == 8:
-    print(Root)
-elif oper == 9:
+elif oper == '**/':
+    print(SqRoot)
+elif oper == 'AOT':
     print(AreaOfTriangle)
+elif oper == 'AOC':
+    print(AreaOfCircle_Radius_num1)
+elif oper == 'CIRCOC':
+    print(Circumference)
 else: #This else statement will ensure the user doesn't enter wrong operator!
     print("I don't know this operator!")
-
