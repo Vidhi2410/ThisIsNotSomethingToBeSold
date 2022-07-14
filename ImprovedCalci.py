@@ -19,8 +19,6 @@ Enter 6 for Area of circle
 Enter 7 for Circumference/Perimeter of circle
 Enter 8 for SquareRoot
 Enter 9 for AreaOfTriangle\n'''))
-
-if oper == 5:
     
 num2 = int(input("Enter 2nd number\n"))
 
